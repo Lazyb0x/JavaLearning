@@ -1,4 +1,4 @@
-package Reflect;
+package reflect;
 
 public class FatherClass {
 	public String mFatherName;
