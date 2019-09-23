@@ -12,6 +12,13 @@ public class MyHashMap {
 		hm.put('D', 500);
 		hm.put('M', 1000);
 		System.out.println(hm.get('I'));
-		
+		Set<Character> set = hm.keySet();
+		Iterator<Character> iter = set.iterator();
+		while(iter.hasNext()) {
+			System.out.println(iter.next());
+		}
+		System.out.println(hm.get('S')==null);
+		hm.put('M', 2000);
+		System.out.println(hm.get('M'));
 	}
 }

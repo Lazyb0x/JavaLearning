@@ -19,9 +19,6 @@ public class MyArrayList {
 		x.add(2);
 		x.add(2);
 		
-		
-		
-		
 		for (int i=0;i<l.size();i++) {
 			System.out.println(l.get(i));
 		}
