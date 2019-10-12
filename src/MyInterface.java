@@ -1,18 +1,18 @@
 //接口
 //类似于 C++ 的函数声明，然后在继承的类中声明具体的方法。
-//一个子类可以继承多个父类
+//一个子类可以实现多个接口
 
-interface if1{
+interface If1{
 	int ax = 100;
 	int bx = 100;
 	int add(int a, int b);
 }
 
-interface if2{
+interface If2{
 	int sub(int a, int b);
 }
 
-class Calc implements if1, if2{
+class Calc implements If1, If2{
 	public int add(int a, int b) {
 		return a+b;
 	}
@@ -22,7 +22,7 @@ class Calc implements if1, if2{
 	}
 }
 
-class Test implements if1{
+class Test implements If1{
 	public int add(int a,int b) {
 		return a+b+ax;
 	}
@@ -39,6 +39,16 @@ public class MyInterface {
 		
 		Test test = new Test();
 		System.out.println(test.add(1, 2));
+		
+		System.out.println(Myadd.add(1, 2));
 	}
+	
+	public static If1 Myadd = new If1() {
+		@Override
+		public int add(int a, int b) {
+			return a+b;
+		}
+	};
+	
 }
 
