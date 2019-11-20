@@ -1,4 +1,6 @@
-﻿
+﻿import java.util.Arrays;
+import java.util.List;
+
 public class Array {
 	public static void main(String[] args){
 		int[] a = {10,25,94,33,574,5,1,-5};
@@ -13,18 +15,11 @@ public class Array {
 			}
 		}
 		
-		for(int i=0;i<8;i++) {
-			System.out.print(a[i]+" ");
-		}
+		int[] c = {1,2,3};
 		
-		int[][] A = {{1,2,3,4},{5,4,6,8}};
-		A[0][0] = 5;
+		int[] b = Arrays.copyOf(c, c.length);
+		c[0] =5;
+		System.out.println(Arrays.toString(b));
 		
-		for(int i=0;i<2;i++) {
-			System.out.println();
-			for(int j=0;j<4;j++) {
-				System.out.print(A[i][j]+" ");
-			}
-		}
 	}
 }
