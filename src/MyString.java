@@ -35,5 +35,9 @@ public class MyString {
 		b.reverse();					//反转
 		System.out.println(b);
 		System.out.println(b.toString());
+		
+		String[] names = {"Bob", "Alice", "Grace"};   //拼接字符串
+		String s = String.join(", ", names);
+		System.out.println(s);
 	}
 }

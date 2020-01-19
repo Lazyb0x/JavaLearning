@@ -14,6 +14,7 @@ public class MyLinkedList {
 		list.offer("you");
 		list.addFirst("i");
 		list.addLast("fine");
+		
 		System.out.println(list);
 		System.out.println(list.pop());		//开头
 		System.out.println(list);
