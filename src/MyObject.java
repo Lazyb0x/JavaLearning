@@ -6,7 +6,11 @@
 	}
 	
 	public static void print() {		//关键字"static"的作用在于可在没有创建对象的情况下来使用 方法/变量 ，而这些变量是共享的。
-		System.out.println("sdfsdaf");
+		System.out.println("initialization");
+	}
+	
+	{
+	    print();
 	}
 }
 

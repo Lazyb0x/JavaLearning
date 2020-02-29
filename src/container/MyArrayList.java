@@ -12,7 +12,7 @@ public class MyArrayList {
 
 		l = Arrays.asList("EEE","FFF","GGG");
 		
-		List<Integer> x = new ArrayList<Integer>();
+		List<Integer> x = new ArrayList<Integer>() {{add(3);}};
 //		int[] a = {1,2,34,4};
 		
 //		x = Arrays.asList(a);
