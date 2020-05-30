@@ -23,7 +23,7 @@ public class ZipPacking {
         try {
             fis = new FileInputStream(file);
             zos = new ZipOutputStream(new FileOutputStream("./mytest.zip"));
-            // 创建压缩文件中的条目（对应压缩文件中的一个文件）
+            // 创建压缩文件中的条目（对应压缩文件中的一个文件的位置）
             System.out.println("entry: " + file.getName());
             ZipEntry entry = new ZipEntry("test/" + file.getName());
             // 将条目添加到压缩文件中
