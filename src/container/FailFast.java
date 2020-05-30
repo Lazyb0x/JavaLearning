@@ -21,6 +21,7 @@ public class FailFast {
         list.add("1");
         list.add("2");
         list.add("3");
+        list.add("4");
         
         // 第二次循环时，迭代器检查到数组修改，抛出异常。
         try {
@@ -39,7 +40,7 @@ public class FailFast {
         while(iterator.hasNext()) {
             var item = iterator.next();
             if ("2".equals(item)) {
-                list.remove(item);
+                iterator.remove();
             }
         }
         System.out.println(list);
