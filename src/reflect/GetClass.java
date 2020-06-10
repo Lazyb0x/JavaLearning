@@ -25,6 +25,6 @@ public class GetClass {
         // 3. 通过实例对象获得
         Class cls3 = new TestClass().getClass();
         
-//        System.out.println(cls==cls2);
+        System.out.println(cls==cls2 && cls2==cls3);    //true
     }
 }
