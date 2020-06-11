@@ -5,8 +5,8 @@ import java.util.jar.Attributes.Name;
 
 // 反射机制
 // jvm 为每一个加载的类都创建了对应的 Class 实例
-// 里面保存了该类的所有信息
-// 通过 Class 实例获取类的信息的方法称为反射（Reflection）。
+// 一个 Class 实例包含了该类的所有信息
+// 通过  Class 实例获取类的信息的方法称为反射（Reflection）。
 
 public class Reflect {
 	//Constructor（构造方法）, Field（成员变量）, Method（方法）
