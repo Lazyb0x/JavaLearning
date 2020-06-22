@@ -11,7 +11,7 @@ public class GetField {
         Class stdClass = Student.class;
         
         // 一个实例化的对象
-        Student s = new Student(100, 3);
+        Student s = new Student(100, "3");
         System.out.println(s);
         
         // 获得字段
@@ -22,6 +22,8 @@ public class GetField {
         System.out.println(pubValue);
         // 字段名称，字段类型，字段的修饰符
         System.out.println(pubField.getName() + " " + pubField.getType() + " " + pubField.getModifiers());
+        // 字段的类型
+        System.out.println(pubField.getGenericType());
         // 更改字段的值
         pubField.set(s, 99);
         
@@ -30,9 +32,10 @@ public class GetField {
         System.out.println(priField);
         // 允许访问私有字段
         priField.setAccessible(true);
+        System.out.println(priField.getGenericType());
         Object priValue = priField.get(s);
         System.out.println(priValue);
-        priField.set(s, 4);
+        priField.set(s, "4");
         
         System.out.println(s);
     }
@@ -44,9 +47,9 @@ class Person {
 
 class Student extends Person{
     public int score;
-    private int grade;
+    private String grade;
     
-    public Student(int score, int grade) {
+    public Student(int score, String grade) {
         super();
         this.score = score;
         this.grade = grade;
