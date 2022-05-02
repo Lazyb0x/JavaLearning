@@ -1,4 +1,4 @@
-﻿class my
+class my
 {	public static int i;
 	public my()
 	{

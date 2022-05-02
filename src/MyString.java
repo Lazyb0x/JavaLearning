@@ -1,4 +1,4 @@
-﻿
+
 public class MyString {
 	public static void main(String args[]) {
 		String a = new String("You are supposed to destroy them, ");
